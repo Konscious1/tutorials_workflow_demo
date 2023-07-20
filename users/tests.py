@@ -14,4 +14,4 @@ def test_user(db, django_user_model):
 def test_login_user(client, test_user):
     test_username, test_password = test_user # this unpacks the tuple
     login_result = client.login(username=test_username, password=test_password)
-    assert login_result ==True
+    assert login_result == True
